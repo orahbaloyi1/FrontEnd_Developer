@@ -1,6 +1,7 @@
 :root {
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
+  --third-color: #ffffff;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -16,7 +17,6 @@ h3 {
 }
 
 h1 {
-  font-size: 96px;
 }
 
 h2 {
@@ -34,13 +34,16 @@ p {
   line-height: 1.5;
 }
 
-.navigation-links {
+.first-link {
   display: flex;
   margin-top: 40px;
   justify-content: center;
 }
 
-.navigation-links a {
+.first-link a {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
   margin: 20px;
   border-radius: 4px;
   padding: 20px 15px;
@@ -48,15 +51,21 @@ p {
   text-transform: capitalize;
 }
 
-.contact-link {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
+.second-link {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
 }
-
-.about-link {
+.second-link a {
+  background: var(--third-color);
+  box-shadow: var(--box-shadow);
+  border: var(--primary-color);
   color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 .homepage-link {
@@ -84,14 +93,4 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
-}
-.yoga-link {
-  margin-top: 30px;
-  border-radius: 4px;
-  padding: 15px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
 }
