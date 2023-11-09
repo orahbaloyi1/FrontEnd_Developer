@@ -90,3 +90,22 @@ p {
 .email-link:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 576px) {
+  .description {
+    text-align: center;
+    padding: 10px;
+    width: 400px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .col-6 {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .description a {
+    padding: 20px 80px;
+  }
+}
