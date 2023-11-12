@@ -91,21 +91,16 @@ p {
   text-decoration: underline;
 }
 
-@media (max-width: 576px) {
-  .description {
+@media (max-width: 900px) {
+  p {
     text-align: center;
-    padding: 10px;
-    width: 400px;
   }
-  .row {
-    flex-direction: column;
+  h4 {
+    text-align: center;
   }
-  .col-6 {
-    width: 100%;
-  }
-}
-@media (max-width: 576px) {
-  .description a {
-    padding: 20px 80px;
+  .responsive-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
   }
 }
